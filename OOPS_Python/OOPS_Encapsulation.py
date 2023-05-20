@@ -45,6 +45,18 @@ class SoftwareEngineer:
             return base_value*2
         return base_value*3
 
+    #There is more neat way to write getter and setter propeties and that is through decorators
+    #Lets write the above getter setter code using decorators
+
+    @property #decorator
+    def salary(self):
+        return self._salary
+    
+    @salary.setter
+    def salary(self, value):
+        self._salary = value
+
+
 
 
 se = SoftwareEngineer("Max", 25)
@@ -57,3 +69,7 @@ for i in range(300):
 
 se.set_salary(6000)
 print(se.get_salary())
+
+#Using decorator method to get the salary
+se.salary = 6000
+print(se.salary)
