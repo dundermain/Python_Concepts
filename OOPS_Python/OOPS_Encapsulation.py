@@ -49,5 +49,11 @@ class SoftwareEngineer:
 
 se = SoftwareEngineer("Max", 25)
 print(se.age, se.name)
+
+#This calculates the number of bugs resolved
+for i in range(300):
+    se.code()
+
+
 se.set_salary(6000)
 print(se.get_salary())
