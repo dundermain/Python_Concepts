@@ -10,6 +10,8 @@ class SoftwareEngineer:
         self.age =  age
 
         #Lets salary and number of bugs solved attribute to private
+        # One underscore (e.g _x) is called "protected attribute"
+        #double underscore (e.g. __x) is called "private attribute"
         self._salary =  None
         self._num_bugs_solved = 0
 
