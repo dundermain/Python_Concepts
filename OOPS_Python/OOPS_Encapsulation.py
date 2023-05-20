@@ -56,6 +56,11 @@ class SoftwareEngineer:
     def salary(self, value):
         self._salary = value
 
+    #now if we want to delete the salary
+    @salary.deleter
+    def salary(self):
+        del self._salary
+
 
 
 
