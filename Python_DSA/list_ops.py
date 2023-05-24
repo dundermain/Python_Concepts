@@ -19,6 +19,16 @@ del mylist[2:4]
 mylist.remove('e')
 #This has time complextiy of O(n)
 
+#Some common list operators
+
+# + operator concatenates the list 
+a = [ 1, 2, 3,]
+b = [4, 5, 6]
+print(a+b) #prints [1, 2, 3, 4, 5, 6]
+
+# * operator is for repetions of list
+print(a*4) #prints [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3,]
+
 
 
 
